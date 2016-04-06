@@ -1,0 +1,46 @@
+{
+  "name": "speedofme",
+  "version": "1.0.0",
+  "description": "simple bandwidth and speed testing client and server",
+  "main": "index.js",
+  "bin": {
+    "speedofme": "bin/speedofme.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**",
+    "coverage": "istanbul cover _mocha test/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordonwritescode/speedofme.git"
+  },
+  "keywords": [
+    "speed",
+    "test",
+    "bandwidth"
+  ],
+  "author": "Gordon Hall <gordon@gordonwritescode.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gordonwritescode/speedofme/issues"
+  },
+  "homepage": "https://github.com/gordonwritescode/speedofme#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.4"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "hat": "0.0.3",
+    "noisegen": "^1.0.0",
+    "request": "^2.70.0",
+    "timer-stopwatch": "^0.2.0",
+    "ws": "^1.0.1"
+  }
+}

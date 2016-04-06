@@ -60,7 +60,7 @@ speedofme client 127.0.0.1:8080
 License
 -------
 
-SpeedOfMe - Simple bandwidth and speed testing client and server.
+SpeedOfMe - Simple bandwidth and speed testing client and server.  
 Copyright (C) 2016  Gordon Hall
 
 This program is free software: you can redistribute it and/or modify

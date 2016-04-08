@@ -36,9 +36,25 @@ program
   .command('server [port]')
   .description('start a speed test server that clients can use')
   .action(function createServer(port) {
-    console.log('(¯`·._.·(¯`·._.· SpeedOfMe Server Running ·._.·´¯)·._.·´¯)');
-    console.log('                         Port: ' + (port || Server.DEFAULTS.port));
-    return Server({ port: port });
+    return Server({ port: port }).on('listening', function() {
+      console.log(JSON.stringify({
+        message: 'server running on port ' + port || Server.DEFAULTS.port,
+        meta: {},
+        timestamp: new Date()
+      }));
+    }).on('connection', function(info) {
+      console.log(JSON.stringify({
+        message: 'client connected for speed test',
+        meta: info,
+        timestamp: new Date()
+      }));
+    }).on('test', function(result) {
+      console.log(JSON.stringify({
+        message: 'client completed speed test',
+        meta: result,
+        timestamp: new Date()
+      }));
+    });
   });
 
 program.parse(process.argv);

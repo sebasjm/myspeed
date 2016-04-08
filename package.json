@@ -1,6 +1,6 @@
 {
   "name": "speedofme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple bandwidth and speed testing client and server",
   "main": "index.js",
   "bin": {

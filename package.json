@@ -1,10 +1,10 @@
 {
-  "name": "speedofme",
+  "name": "myspeed",
   "version": "1.0.1",
   "description": "simple bandwidth and speed testing client and server",
   "main": "index.js",
   "bin": {
-    "speedofme": "bin/speedofme.js"
+    "myspeed": "bin/myspeed.js"
   },
   "directories": {
     "test": "test"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gordonwritescode/speedofme.git"
+    "url": "git+https://github.com/gordonwritescode/myspeed.git"
   },
   "keywords": [
     "speed",
@@ -25,9 +25,9 @@
   "author": "Gordon Hall <gordon@gordonwritescode.com>",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/gordonwritescode/speedofme/issues"
+    "url": "https://github.com/gordonwritescode/myspeed/issues"
   },
-  "homepage": "https://github.com/gordonwritescode/speedofme#readme",
+  "homepage": "https://github.com/gordonwritescode/myspeed#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",

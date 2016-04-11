@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 var Client = require('../lib/client');
 var Server = require('../lib/server');
 
-describe('speedofme/integration', function() {
+describe('myspeed/integration', function() {
 
   it('should perform the bandwidth test and return results', function(done) {
     this.timeout(10000);

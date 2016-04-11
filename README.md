@@ -1,9 +1,9 @@
-SpeedOfMe
-=========
+MySpeed
+=======
 
-[![Build Status](https://img.shields.io/travis/gordonwritescode/speedofme.svg?style=flat-square)](https://travis-ci.org/gordonwritescode/speedofme)
-[![Coverage Status](https://img.shields.io/coveralls/gordonwritescode/speedofme.svg?style=flat-square)](https://coveralls.io/r/gordonwritescode/speedofme)
-[![NPM](https://img.shields.io/npm/v/speedofme.svg?style=flat-square)](https://www.npmjs.com/package/speedofme)
+[![Build Status](https://img.shields.io/travis/gordonwritescode/myspeed.svg?style=flat-square)](https://travis-ci.org/gordonwritescode/myspeed)
+[![Coverage Status](https://img.shields.io/coveralls/gordonwritescode/myspeed.svg?style=flat-square)](https://coveralls.io/r/gordonwritescode/myspeed)
+[![NPM](https://img.shields.io/npm/v/myspeed.svg?style=flat-square)](https://www.npmjs.com/package/myspeed)
 
 Simple bandwidth and speed testing client and server.
 
@@ -13,13 +13,13 @@ Programmatic Usage
 Install locally with NPM:
 
 ```
-npm install speedofme --save
+npm install myspeed --save
 ```
 
 ### Server
 
 ```js
-var Server = require('speedofme').Server;
+var Server = require('myspeed').Server;
 var server = new Server({ port: 8080 });
 
 // That's it!
@@ -28,7 +28,7 @@ var server = new Server({ port: 8080 });
 ### Client
 
 ```js
-var Client = require('speedofme').Client;
+var Client = require('myspeed').Client;
 var client = new Client({ url: 'ws://127.0.0.1:8080' });
 
 client.test(function(err, result) {
@@ -42,25 +42,25 @@ Command Line Interface
 Install globally with NPM:
 
 ```
-npm install speedofme --global
+npm install myspeed --global
 ```
 
 ### Server
 
 ```
-speedofme server 8080
+myspeed server 8080
 ```
 
 ### Client
 
 ```
-speedofme client 127.0.0.1:8080
+myspeed client 127.0.0.1:8080
 ```
 
 License
 -------
 
-SpeedOfMe - Simple bandwidth and speed testing client and server.  
+MySpeed - Simple bandwidth and speed testing client and server.  
 Copyright (C) 2016  Gordon Hall
 
 This program is free software: you can redistribute it and/or modify

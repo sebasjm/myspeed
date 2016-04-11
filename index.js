@@ -1,5 +1,5 @@
 /**
- * @module speedofme
+ * @module myspeed
  */
 
 'use strict';

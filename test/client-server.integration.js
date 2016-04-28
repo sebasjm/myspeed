@@ -20,4 +20,19 @@ describe('myspeed/integration', function() {
     });
   });
 
+  it('should cleanup and stop streams if an error occurs', function(done) {
+    this.timeout(10000);
+
+    var server = new Server({ port: 45124 });
+    var client = new Client({ url: 'ws://127.0.0.1:45123' });
+
+    client.test(function(err, results) {
+      expect(err.message).to.equal('Speed test ended early');
+      done();
+    });
+    setImmediate(function() {
+      client._socket.close();
+    });
+  });
+
 });

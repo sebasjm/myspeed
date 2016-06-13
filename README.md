@@ -1,8 +1,8 @@
 MySpeed
 =======
 
-[![Build Status](https://img.shields.io/travis/gordonwritescode/myspeed.svg?style=flat-square)](https://travis-ci.org/gordonwritescode/myspeed)
-[![Coverage Status](https://img.shields.io/coveralls/gordonwritescode/myspeed.svg?style=flat-square)](https://coveralls.io/r/gordonwritescode/myspeed)
+[![Build Status](https://img.shields.io/travis/bookchin/myspeed.svg?style=flat-square)](https://travis-ci.org/bookchin/myspeed)
+[![Coverage Status](https://img.shields.io/coveralls/bookchin/myspeed.svg?style=flat-square)](https://coveralls.io/r/bookchin/myspeed)
 [![NPM](https://img.shields.io/npm/v/myspeed.svg?style=flat-square)](https://www.npmjs.com/package/myspeed)
 
 Simple bandwidth and speed testing client and server.
